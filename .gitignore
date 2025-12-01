@@ -1,0 +1,5 @@
+# Ignore all directories which docker stores data
+data
+conf
+logs
+backup

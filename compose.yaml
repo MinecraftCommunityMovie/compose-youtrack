@@ -1,0 +1,12 @@
+services:
+  youtrack:
+    image: jetbrains/youtrack:2025.3.108924
+    container_name: youtrack
+    restart: unless-stopped
+    volumes:
+      - /opt/compose-jetbrains/data:/opt/youtrack/data
+      - /opt/compose-jetbrains/conf:/opt/youtrack/conf
+      - /opt/compose-jetbrains/logs:/opt/youtrack/logs
+      - /opt/compose-jetbrains/backups:/opt/youtrack/backups
+    ports:
+      - 127.0.0.1:1111:8080
