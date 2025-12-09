@@ -4,9 +4,9 @@ services:
     container_name: youtrack
     restart: unless-stopped
     volumes:
-      - /opt/compose-jetbrains/data:/opt/youtrack/data
-      - /opt/compose-jetbrains/conf:/opt/youtrack/conf
-      - /opt/compose-jetbrains/logs:/opt/youtrack/logs
-      - /opt/compose-jetbrains/backups:/opt/youtrack/backups
+      - /opt/docker-data/youtrack/data:/opt/youtrack/data
+      - /opt/docker-data/youtrack/conf:/opt/youtrack/conf
+      - /opt/docker-data/youtrack/logs:/opt/youtrack/logs
+      - /opt/docker-data/youtrack/backups:/opt/youtrack/backups
     ports:
       - 127.0.0.1:1111:8080
