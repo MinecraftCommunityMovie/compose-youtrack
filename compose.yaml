@@ -1,6 +1,6 @@
 services:
   youtrack:
-    image: jetbrains/youtrack:2025.3.131383
+    image: jetbrains/youtrack:2025.3.132953
     container_name: youtrack
     restart: unless-stopped
     volumes:
